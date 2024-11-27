@@ -1,1 +1,1 @@
-                                                        Jayvee C. Garcia BSIT - 1A Semestral Project in Computer Programming
+Jayvee C. Garcia BSIT - 1A Semestral Project in Computer Programming
