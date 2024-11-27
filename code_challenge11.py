@@ -1,13 +1,17 @@
-for x in range(0,7):
-    for y in range(7 - x):
-        print(" " , end= " ")
-    for z in range(1, x + 1):
-        print("  *", end = " ")
+for w in range(1,6):
+    for x in range(6, w , -1):
+        print(" ", end= " ")
+    for y in range(1, w ,1):
+        print("*", end= " ")
+    for z in range(2, w, 1):
+        print("*", end= " ")
     print()
 
-for a in range(1,7):
-    for b in range(1, a + 1):
-        print("  ", end = " ")
-    for c in range( 6, a, -1):
-        print("   *", end = " ")
-    print()  
+for a in range(1,5):
+    for b in range(-1, a , 1):
+        print(" ", end= " ")
+    for c in range(a, 4 ):
+        print("*", end= " ")
+    for d in range(a, 3):
+        print("*", end= " ")
+    print()
