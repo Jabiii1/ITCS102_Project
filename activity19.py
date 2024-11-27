@@ -1,6 +1,3 @@
-from unicodedata import name
-
-
 countinue = True
 
 while countinue == True:
