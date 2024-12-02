@@ -1,4 +1,5 @@
 def act21():
+    
     count = True
     num = 0
 

@@ -1,4 +1,5 @@
 def act25():
+    
     fruits = ["Banana" , "Apple" , "Starapple" , "Pineapple"]
         
     fruits.pop()

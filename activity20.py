@@ -1,6 +1,6 @@
 def act20():
+    
     import os
-
     isContinue = True
     triangle = 0
 
