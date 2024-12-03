@@ -41,7 +41,7 @@ from code_challenge16 import cc16
 
 import os 
 
-def act():            #All Acitivities
+def act():
     os.system('cls')
     pickact = input("2 --- Activity 2\n3 --- Activity 3\n4 --- Activity 4\n5 --- Activity 5\n6 --- Activity 6\n7 --- Activity 7\n8 --- Activity 8\n9 --- Activity 9\n10 --- Activity 10\n11 --- Activity 11\n12 --- Activity 12\n13 --- Activity 13\n14 --- Activity 14\n15 --- Activity 15\n16 --- Activity 16\n17 --- Activity 17\n18 --- Activity 18\n19 --- Activity 19\n20 --- Activity 20\n21 --- Activity 21\n22 --- Activity 22\n23 --- Activity 23\n24 --- Activity 24\n25 --- Activity 25\nSelect one: ")
     if pickact == "2":
@@ -427,7 +427,7 @@ def act():            #All Acitivities
             else:
                 print("Invalid input. Please enter 'yes' or 'no'")
                 continue
-def cc():             #All Code Challenge
+def cc():
     os.system('cls')
     pickcc = input("1 --- Code Challenge 1\n2 --- Code Challenge 2\n3 --- Code Challenge 4\n4 --- Code Challenge 5\n5 --- Code Challenge 6\n6 --- Code Challenge 7\n7 --- Code Challenge 8\n8 --- Code Challenge 8 (another)\n9 --- Code Challenge 9\n10 --- Code Challenge 10\n11 --- Code Challenge 11\n12 --- Code Challenge 12\n13 --- Code Challenge 13\n14 --- Code Challenge 14\n15 --- Code Challenge 15\n16 --- Code Challenge 16")
     
@@ -686,9 +686,8 @@ def cc():             #All Code Challenge
             else:
                 print("Invalid input. Please enter 'yes' or 'no'")
                 continue
-def main():           #Main Menu
-    os.system('cls')  
-    print("Jayvee C. Garcia BSIT-1A School Works!")
+
+def main():
     pick = input("\n1 --- Activity\n2 --- Code challenge\n3 --- Exit\nChoose an activity or a code challenge:")
 
     if pick == "1":
