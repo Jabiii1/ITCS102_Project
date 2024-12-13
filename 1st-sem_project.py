@@ -40,6 +40,7 @@ from code_challenge15 import cc15
 from code_challenge16 import cc16
 import os             #para sa cls
 import time           #para sa heart
+import webbrowser     #para sa pag visit ng github acc
 
 def act():            #All Acitivities
     os.system('cls')
@@ -718,11 +719,13 @@ def heart():  #mini effort sa huli
         print(line)
         time.sleep(0.3)  
 
-
+def link():
+    webbrowser.open("https://github.com/Jabiii1")
+    
 def main():           #Main Menu
     os.system('cls')  
     print("Jayvee C. Garcia BSIT-1A School Works!")
-    pick = input("\n1 --- Activity\n2 --- Code challenge\n3 --- Exit\nChoose between the schoolworks:")
+    pick = input("\n1 --- Activity\n2 --- Code challenge\n3 --- Github Profile\n4 --- Exit\nChoose between the schoolworks: ")
 
     if pick == "1":
         os.system('cls')
@@ -733,6 +736,10 @@ def main():           #Main Menu
         cc()
 
     elif pick == "3":
+        link()
+        return main()
+    
+    elif pick == "4":
         os.system('cls')
         print("Program Terminated")
         print("Thank you!!!")
