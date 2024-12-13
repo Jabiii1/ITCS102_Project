@@ -39,12 +39,18 @@ from code_challenge14 import cc14
 from code_challenge15 import cc15
 from code_challenge16 import cc16
 
-import os 
+import os             #para sa cls
+import time           #para sa heart
 
 def act():            #All Acitivities
     os.system('cls')
-    pickact = input("2 --- Activity 2\n3 --- Activity 3\n4 --- Activity 4\n5 --- Activity 5\n6 --- Activity 6\n7 --- Activity 7\n8 --- Activity 8\n9 --- Activity 9\n10 --- Activity 10\n11 --- Activity 11\n12 --- Activity 12\n13 --- Activity 13\n14 --- Activity 14\n15 --- Activity 15\n16 --- Activity 16\n17 --- Activity 17\n18 --- Activity 18\n19 --- Activity 19\n20 --- Activity 20\n21 --- Activity 21\n22 --- Activity 22\n23 --- Activity 23\n24 --- Activity 24\n25 --- Activity 25\nSelect one: ")
-    if pickact == "2":
+    pickact = input("\t\t\t\t\t\tGarcia's Activities!!!\n\n2 --- Activity 2       6 --- Activity 6       11 --- Activity 11      16 --- Activity 16      21 --- Activity 21\n3 --- Activity 3       7 --- Activity 7       12 --- Activity 12      17 --- Activity 17      22 --- Activity 22\n4 --- Activity 4       8 --- Activity 8       13 --- Activity 13      18 --- Activity 18      23 --- Activity 23\n5 --- Activity 5       9 --- Activity 9       14 --- Activity 14      19 --- Activity 19      24 --- Activity 24\n                       10 --- Activity 10     15 --- Activity 15      20 --- Activity 20      25 --- Activity 25\n\nSelect one activity (type back to return): ")
+    if pickact == "1":
+        os.system('cls')
+        print("Invalid choice")
+        return act()
+    
+    elif pickact == "2":
         os.system('cls')
         act2()
         while True:
@@ -427,9 +433,11 @@ def act():            #All Acitivities
             else:
                 print("Invalid input. Please enter 'yes' or 'no'")
                 continue
+    elif pickact.lower() == "back":
+        return main()
 def cc():             #All Code Challenge
     os.system('cls')
-    pickcc = input("1 --- Code Challenge 1\n2 --- Code Challenge 2\n3 --- Code Challenge 4\n4 --- Code Challenge 5\n5 --- Code Challenge 6\n6 --- Code Challenge 7\n7 --- Code Challenge 8\n8 --- Code Challenge 8 (another)\n9 --- Code Challenge 9\n10 --- Code Challenge 10\n11 --- Code Challenge 11\n12 --- Code Challenge 12\n13 --- Code Challenge 13\n14 --- Code Challenge 14\n15 --- Code Challenge 15\n16 --- Code Challenge 16")
+    pickcc = input("\t\t\t\t\t\tGarcia's Code Challenges!!!\n\n1 --- Code Challenge 1       6 --- Code Challenge 6        10 --- Code Challenge 10        15 --- Code Challenge 15\n2 --- Code Challenge 2       7 --- Code Challenge 7        11 --- Code Challenge 11        16 --- Code Challenge 16\n4 --- Code Challenge 4       8 --- Code Challenge 8        12 --- Code Challenge 12\n5 --- Code Challenge 5      8a --- Code Challenge 8(1)     13 --- Code Challenge 13\n                             9 --- Code Challenge 9        14 --- Code Challenge 14\n\nSelect one code challenge (type back to return):  ")
     
     if pickcc == "1":
         os.system('cls')
@@ -463,7 +471,7 @@ def cc():             #All Code Challenge
                 print("Invalid input. Please enter 'yes' or 'no'")
                 continue
     
-    elif pickcc == "3":
+    elif pickcc == "4":
         os.system('cls')
         cc4()
         while True:
@@ -479,7 +487,7 @@ def cc():             #All Code Challenge
                 print("Invalid input. Please enter 'yes' or 'no'")
                 continue
     
-    elif pickcc == "4":
+    elif pickcc == "5":
         os.system('cls')
         cc5()
         while True:
@@ -495,7 +503,7 @@ def cc():             #All Code Challenge
                 print("Invalid input. Please enter 'yes' or 'no'")
                 continue
     
-    elif pickcc == "5":
+    elif pickcc == "6":
         os.system('cls')
         cc6()
         while True:
@@ -511,7 +519,7 @@ def cc():             #All Code Challenge
                 print("Invalid input. Please enter 'yes' or 'no'")
                 continue
     
-    elif pickcc == "6":
+    elif pickcc == "7":
         os.system('cls')
         cc7()
         while True:
@@ -527,7 +535,7 @@ def cc():             #All Code Challenge
                 print("Invalid input. Please enter 'yes' or 'no'")
                 continue
             
-    elif pickcc == "7":
+    elif pickcc == "8":
         os.system('cls')
         cc8()
         while True:
@@ -543,7 +551,7 @@ def cc():             #All Code Challenge
                 print("Invalid input. Please enter 'yes' or 'no'")
                 continue
     
-    elif pickcc == "8":
+    elif pickcc == "8a":
         os.system('cls')
         cc8a()
         while True:
@@ -686,10 +694,33 @@ def cc():             #All Code Challenge
             else:
                 print("Invalid input. Please enter 'yes' or 'no'")
                 continue
+    elif pickcc == "back":
+        return main()
+
+def heart():  #mini effort sa huli
+    print("\nThanks for using the program!\n")
+    time.sleep(1)
+
+    puso = [
+        "     ***     ***  ",
+        "    *****   ***** ",
+        "   ******* *******",
+        "    ************* ",
+        "     ***********  ",
+        "      *********   ",
+        "       *******    ",
+        "        *****     ",
+        "         ***      ",
+        "          *       "]
+
+    for line in puso:
+        print(line)
+        time.sleep(0.3)  
+
 def main():           #Main Menu
     os.system('cls')  
     print("Jayvee C. Garcia BSIT-1A School Works!")
-    pick = input("\n1 --- Activity\n2 --- Code challenge\n3 --- Exit\nChoose an activity or a code challenge:")
+    pick = input("\n1 --- Activity\n2 --- Code challenge\n3 --- Exit\nChoose between the schoolworks:")
 
     if pick == "1":
         os.system('cls')
@@ -702,4 +733,8 @@ def main():           #Main Menu
     elif pick == "3":
         os.system('cls')
         print("Program Terminated")
+        print("Thank you!!!")
+        heart()
+    else:
+        return main()
 main()
